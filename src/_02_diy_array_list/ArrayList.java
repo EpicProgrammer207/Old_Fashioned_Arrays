@@ -3,10 +3,12 @@ package _02_diy_array_list;
 import java.sql.Array;
 
 public class ArrayList<E> {
-	Object[] array = new Object[10];
+	Object[] array = new Object[0];
 int size;
+
 	public void add(E e) {
 		// TODO Auto-generated method stub
+		
 		
 		Object[] array2 = new Object[array.length + 1];
 		for (int i = 0; i < array.length; i++) {
@@ -17,6 +19,7 @@ int size;
 for(int o = 0; o<array.length; o++) {
 	System.out.println(array[o]);
 }
+
 	}
 
 	E get(int i) {
@@ -29,15 +32,9 @@ for(int o = 0; o<array.length; o++) {
 	}
 
 	public void set(int i, E e) {
-	Object[] array5 = new Object[array.length];
-		for(int k = 0; k<i; k++) {
-		array5[k] = array[k];
-	}
+	
 		array[i] = e;
-		for(int l = i+1; l<array.length; l++) {
-			array5[l] = array[l];
-		}
-		array = array5;
+		
 		// TODO Auto-generated method stub
 	}
 
