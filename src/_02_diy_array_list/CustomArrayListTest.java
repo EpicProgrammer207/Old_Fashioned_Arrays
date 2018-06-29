@@ -12,7 +12,9 @@ public class CustomArrayListTest {
 		list.add(0);
 		list.add(1);
 		list.add(206);
-	
+for(int i = 0; i<10; i++) {
+	System.out.println(list.get(i));
+}
 		if(list.get(0) != 0) fail("list.get(0) returning improper value.");
 		if(list.get(1) != 1) fail("list.get(1) returning improper value.");
 		if(list.get(2) != 206) fail("list.get(2) returning improper value.");
@@ -27,7 +29,9 @@ public class CustomArrayListTest {
 		list.add("THREE");
 		
 		list.set(2, "PICKLES");
-		
+
+
+
 		if(!list.get(0).equals("TESTER")) fail("list.get(0) returning improper value.");
 		if(!list.get(1).equals("ONE"))  fail("list.get(1) returning improper value.");
 		if(!list.get(2).equals("PICKLES"))  fail("list.get(2) returning improper value.");
